@@ -2,28 +2,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1000px;
+    height: 100%;
     background-color: #2b2929;
     align-items: center;
+    overflow:hidden;
 }
-
-
-
-.filters-dropdowns-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-}
-
-
-.filters-searchbars-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-}
-
 
 .filters-logo{
     margin-top: 40px;
@@ -33,8 +16,33 @@
     align-items: flex;
 }
 
+.filters-dropdowns-container{
+    width: 100%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+
+
+.filters-searchbars-container{
+    width: 100%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+
+
+
 .filters-content{
     margin-top: 10px;
-    width: 51%;
+    width: 100%;
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 

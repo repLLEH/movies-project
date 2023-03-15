@@ -1,5 +1,5 @@
 .filter-searchbar{
-    width: 220px;
+    width: 267px;
     border-radius: 10px;
     background-color: #555;
     margin-right: 50px;
@@ -8,7 +8,7 @@
     flex-direction: column;
     color:white;
     align-items:center;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 0px;
 }
 
 .filter-searchbar-input {

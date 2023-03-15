@@ -6,13 +6,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
     color:white;
 }
 
 .logo-container{
     font-weight: 500;
     cursor: pointer;
+    padding-left: 40px;
 }
 
 .logo {
@@ -22,8 +22,9 @@
 
 
 .links-container{
-    padding-right: 300px;
-    margin-left: 50px;
+    padding-right: 200px;
+    margin-left: 80px;
+    margin-top: 10px;
     display: flex;
     width: 100px;
     justify-content: space-evenly;
@@ -79,4 +80,8 @@
 
 .searchbar-icon:focus{
     color: white;
+}
+
+.add-button{
+    margin-right: 60px;
 }

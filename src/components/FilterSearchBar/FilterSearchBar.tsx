@@ -13,7 +13,9 @@ const FilterSearchBar = ({isActive, setIsActive, selected, setSelected,logo,item
         const regex = /^[0-9\b]+$/;
         if (logo === 'Рейтинг'){
             if (e.currentTarget.value == "" || regex.test(e.currentTarget.value)){
-            setSelected(e.currentTarget.value)
+                if (Number(e.currentTarget.value) <= 10 || e.currentTarget.value == ""){
+                    setSelected(e.currentTarget.value)
+                }
             }
         }
         else{
