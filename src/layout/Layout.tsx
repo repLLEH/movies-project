@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Nav from "../components/Nav/Nav";
+import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 import './Layout.css'
 
@@ -13,6 +14,7 @@ const Layout = ({children, ...props}: Props) =>{
         <div className="layout">
             <Nav/>
             <div>{children}</div>
+            
         </div>
     );
 };

@@ -1,5 +1,8 @@
 import React from "react";
 import ContentSingleItem from "../ContentSingleItem/ContentSingleItem";
+import BackToTopButton from "../BackToTopButton/BackToTopButton";
+
+
 
 import './MainPageContent.css';
 
@@ -13,6 +16,7 @@ const MainPageContent = ({data}:{data:string[]}) => {
                         <ContentSingleItem item = {item}/>
                     </div>
                 ))}
+                <BackToTopButton/>
         </div>
     );
 }

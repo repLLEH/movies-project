@@ -3,7 +3,7 @@ import Layout from '../../layout/Layout';
 import DropDown from '../../components/DropDown/DropDown';
 import FilterSearchBar from '../../components/FilterSearchBar/FilterSearchBar';
 import MainPageContent from '../../components/MainPageContent/MainPageContent';
-
+import BackToTopButton from '../../components/BackToTopButton/BackToTopButton';
 
 import './Filters.css'
 
@@ -47,10 +47,10 @@ const Filters = () =>{
                     <FilterSearchBar isActive={isActiveGenre} setIsActive={setIsActiveGenre} selected={selectedGenre} setSelected={setSelectedGenre} logo='Жанр' items={['Боевик','Триллер']}/>
                     </div>
                 </div>
-                
                 <div className='filters-content'>
-                    <MainPageContent data={['Бойцовский клуб','Довод','Интерстеллар']}/>
+                    <MainPageContent data={['Бойцовский клуб','Довод','Интерстеллар', 'Гордость и предубеждение']}/>
                 </div>
+                
             </div>
         </Layout>
     );
