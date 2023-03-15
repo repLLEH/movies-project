@@ -11,8 +11,15 @@ const FilterSearchBar = ({isActive, setIsActive, selected, setSelected,logo,item
     // for input
     const onChange = (e: React.FormEvent<HTMLInputElement>) =>{
         const regex = /^[0-9\b]+$/;
-        if (e.currentTarget.value == "" || regex.test(e.currentTarget.value)){
+        if (logo === 'Рейтинг'){
+            if (e.currentTarget.value == "" || regex.test(e.currentTarget.value)){
             setSelected(e.currentTarget.value)
+            }
+        }
+        else{
+            if (!regex.test(e.currentTarget.value)){
+            setSelected(e.currentTarget.value)
+            }
         }
         
     }
