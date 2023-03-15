@@ -1,0 +1,10 @@
+.item{
+    background-color: #202020;
+    border-radius: 10px;
+    margin: 25px;
+    height: 300px;
+    cursor: pointer;
+    padding: 20px 0 0 20px;
+    color: white;
+    font-size: x-large;
+}

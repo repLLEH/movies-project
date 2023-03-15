@@ -1,0 +1,40 @@
+.filters-page-component{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    background-color: #2b2929;
+    align-items: center;
+}
+
+
+
+.filters-dropdowns-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+
+.filters-searchbars-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+
+.filters-logo{
+    margin-top: 40px;
+    font-size: xx-large;
+    color: white;
+    width: 51%;
+    align-items: flex;
+}
+
+.filters-content{
+    margin-top: 10px;
+    width: 51%;
+}
+

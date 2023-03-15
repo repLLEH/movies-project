@@ -52,7 +52,7 @@
     color:white;
     padding-left: 20px;
     height: 40px;
-    align-items:end;
+    align-items:center;
 }
 
 
@@ -65,7 +65,6 @@
     border-radius: 15px;
     border: none;
     color: white;
-    height: 100%;
     font-size: large;
     
 }
@@ -74,7 +73,10 @@
     outline: none;
 }
 
-.search-icon {
-    padding-top:5px;
-    background-color: #f3e5a6;
+.searchbar-icon{
+    color: #b1b1b1;
+}
+
+.searchbar-icon:focus{
+    color: white;
 }
