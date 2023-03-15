@@ -10,7 +10,11 @@ const FilterSearchBar = ({isActive, setIsActive, selected, setSelected,logo,item
 
     // for input
     const onChange = (e: React.FormEvent<HTMLInputElement>) =>{
-        setSelected(e.currentTarget.value)
+        const regex = /^[0-9\b]+$/;
+        if (e.currentTarget.value == "" || regex.test(e.currentTarget.value)){
+            setSelected(e.currentTarget.value)
+        }
+        
     }
 
     // to hide searched content
@@ -31,6 +35,7 @@ const FilterSearchBar = ({isActive, setIsActive, selected, setSelected,logo,item
             className='filter-searchbar-input' 
             placeholder={logo}
             value={selected} 
+            pattern="[0-10]"
             onClick={e => setIsActive(!isActive)} 
             onChange={onChange}
             />
