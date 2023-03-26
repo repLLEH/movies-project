@@ -1,12 +1,10 @@
 import React from 'react'
 import SearchBar from './SearchBar'
-import Filters from '../../pages/Filters/Filters'
 import {Link} from 'react-router-dom'
-
+import ToolTip from '../ToolTip/ToolTip'
 
 import './Nav.css'
 import * as data from "./links.json"
-import { useNavigate } from 'react-router'
 const linksString = JSON.stringify(data)
 const links = JSON.parse(linksString).links
 
@@ -25,7 +23,7 @@ const Nav: React.FC<{}> = () => {
     return (
         <nav className="navbar">
             <div className='logo-container'>
-                <span className='logo'>Кинофильмы</span>
+                <span className='logo'>Кинофильм</span>
             </div>
             <div className='links-container'>
                 {links.map((link: MyLink) => {
@@ -42,7 +40,8 @@ const Nav: React.FC<{}> = () => {
             <div className='searchbar-container'>
                 <SearchBar/>
             </div>
-            <button className='add-button'>+</button>
+            <ToolTip/>
+            
         </nav>
     );
 }

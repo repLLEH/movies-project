@@ -9,7 +9,7 @@ const SearchBar: React.FC = () => {
         <div className='searchbar'>
             <input placeholder="Роберт Паттинсон" className='searchbar-input'></input>
             <IconButton>
-            <Search className='searchbar-icon'/>
+                <Search className='searchbar-icon'/>
             </IconButton>
             
         </div>

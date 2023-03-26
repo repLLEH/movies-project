@@ -82,7 +82,6 @@
     color: white;
 }
 
-.add-button{
-    margin-right: 60px;
-    cursor: pointer;
+.tooltip{
+    background-color: aquamarine;
 }
