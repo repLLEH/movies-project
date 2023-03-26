@@ -22,6 +22,7 @@
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "smooth-scrollbar-react": "^2.4.1",
+    "ts-sc-client": "github:ostis-ai/ts-sc-client",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
