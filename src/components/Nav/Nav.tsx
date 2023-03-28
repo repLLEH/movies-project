@@ -23,7 +23,7 @@ const Nav: React.FC<{}> = () => {
     return (
         <nav className="navbar">
             <div className='logo-container'>
-                <span className='logo'>Кинофильм</span>
+                <span className='logo'>Кинофильмы</span>
             </div>
             <div className='links-container'>
                 {links.map((link: MyLink) => {
@@ -40,7 +40,10 @@ const Nav: React.FC<{}> = () => {
             <div className='searchbar-container'>
                 <SearchBar/>
             </div>
-            <ToolTip/>
+            <div className='tooltip'>
+                <ToolTip/> 
+            </div>
+            
             
         </nav>
     );

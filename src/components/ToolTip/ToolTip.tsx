@@ -1,5 +1,5 @@
 import { Tooltip, IconButton } from '@mui/material';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import { AddCircle } from '@mui/icons-material';
 
 
 import "./ToolTip.css"
@@ -23,7 +23,7 @@ const ToolTip = () =>{
     return (
         <Tooltip title = 'Добавить фильм' className='tooltip'>
             <IconButton>
-                <AddCircleOutlineIcon/>
+                <AddCircle fontSize="large" style={{color:'white'}}/>
             </IconButton>
         </Tooltip>
     )

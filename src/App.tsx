@@ -9,12 +9,12 @@ import './App.css'
 
 const router = createBrowserRouter([
     {
-        path: '/',
-        element: <Home/>,
-    },
-    {
         path:'/filters',
         element: <Filters/>,
+    },
+    {
+        path: '/',
+        element: <Home/>,
     },
     {
         path: '/recommended',
