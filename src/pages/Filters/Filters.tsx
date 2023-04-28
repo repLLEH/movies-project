@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import Layout from '../../layout/Layout';
 import DropDown from '../../components/DropDown/DropDown';
 import FilterSearchBar from '../../components/FilterSearchBar/FilterSearchBar';
@@ -6,6 +6,7 @@ import MainPageContent from '../../components/MainPageContent/MainPageContent';
 import BackToTopButton from '../../components/BackToTopButton/BackToTopButton';
 
 import './Filters.css'
+import FilterPageContent from "../../components/FilterPageContent/FilterPageContent";
 
 
 
@@ -30,7 +31,13 @@ const Filters = () =>{
     // isActive={isActiveYear} setIsActive={setIsActiveYear} 
     // isActive={isActiveCountry} setIsActive={setIsActiveCountry}
     // isActive={isActiveDirector} setIsActive={setIsActiveDirector}
-
+    const data:Array<any>=[{title:'Бойцовский клуб',actors:['Роберт Паттинсон, Райан Гослинг,Том Харди'],rating:'10',jenre:['Боевик','Триллер']},
+        {title:'Бетмен',actors:['Роберт Паттинсон','Том Харди'],rating:'10',jenre:['Боевик','Триллер']},
+        {title:'Драйв',actors:['Райан Гослинг'],rating:'10',jenre:['Боевик','Триллер']},
+        {title:'Веном',actors:['Том Харди'],rating:'10',jenre:['Боевик','Триллер']},
+    ]
+    console.log('=====>> ',selectedActor)
+    useEffect(()=>{},[selectedActor])
     return (
         <Layout>
             <div className='filters-page-component'>
@@ -48,7 +55,7 @@ const Filters = () =>{
                     </div>
                 </div>
                 <div className='filters-content'>
-                    <MainPageContent data={['Бойцовский клуб','Довод','Интерстеллар', 'Гордость и предубеждение']}/>
+                    <FilterPageContent data={data} selectedActor={selectedActor}/>
                 </div>
                 
             </div>
